@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej 2</title>
+    <style>
+        .container{
+            display: flex   ;
+            gap: 10px;
+        }
+        .producto {
+            height: 200px;
+            width: 400px;
+            display: flex;
+            border: 2px solid black;
+            gap: 60px;
+            position: relative;
+        }
+        /* caja de producto*/
+        .izq{
+            width: 25%;
+            height: 100%;
+        }
+        .color-uno{
+            background-color:#c963c4ff ;
+        }
+        .img-producto{
+            width:100px;
+        }
+        .img-flotante{
+            position: absolute;
+            top: 25%;
+            left: 50px;
+
+        }
+        button{
+            border: 1px solid rgb(141,0, 206);
+            margin: 15px;
+            margin-bottom: 15px;
+            padding: 3px;
+            color: rgb(141, 0, 206);
+            background-color: transparent;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!--primer producto-->
+        <div class="producto">
+            <div class="izq color-uno">
+
+
+            </div>
+            <div class="img-flotante">
+                <img src="offer.png" class="img-producto" alt="" >
+            </div>
+            <div class="der">
+                <div class="titulo">
+                    <h2><span>DESCUBRILAS</span></h2>
+                    <div>esta es la descripcion del producto</div>
+                    <div class="caja-boton">
+                        <button>ver mas</button>
+
+                    </div>
+            </div>
+
+            </div>
+
+        </div>
+        <div class="producto">
+            <div class="izq color-uno">
+
+
+            </div>
+            <div class="img-flotante">
+                <img src="offer.png" class="img-producto" alt="" >
+            </div>
+            <div class="der">
+                <div class="titulo">
+                    <h2><span>DESCUBRILAS</span></h2>
+                    <div>esta es la descripcion del producto</div>
+                    <div class="caja-boton">
+                        <button>ver mas</button>
+
+                    </div>
+            </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
