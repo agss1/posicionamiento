@@ -1,39 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tp03</title>
     <style>
-        .container{
+        .container {
             display: flex;
             gap: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
         }
+
         .productos {
-            height: 250px;
-            width: 500px;
+            height: 300px;
+            width: 700px;
             border: 2px solid black;
             gap: 60px;
-            
+            position: relative;
+
         }
-        .imagen-izq{
-            width: 150px;
+
+        .imagen-izq {
+            width: 700px;
+            height: 200px;
         }
-        .texto{
-            height: 250px;
-            width: 500px;
-            top: 2px ;
+
+        .texto {
+            height: 150px;
+            width: 450px;
+            top: 2px;
             gap: 60px;
         }
+
+        .descuento {
+            background-color: violet;
+            width: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 0%;
+            left: 20px;
+            
+            .hasta{
+                text-align: left;
+                color: white;
+                font-size: 2 0px;
+            }
+        }
+        .descu{
+            display: flex;
+        }
+        .descuento-izq{
+            display: flex;
+            color: white;
+            font-size: 30px;
+        }
+        .descuento-der{
+            display: block;
+            text-align: right;
+            color: white;
+            font-size: 25px;
+        
+        }
+        .off{
+            font-size: 15px;
+        }
+         
+    
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="productos">
-            <div><img src="ollas.png" class="imagen-izq" alt=""></div>
-            <div class="texto"><h2><span>notebooks,tablets, smartwatches y muchas mas hasta 6 cuotas sin interes </span></h2></div>
-            <div><p>hasta</p></div>
+            <div><img src="elec.jpg" class="imagen-izq" alt=""></div>
+            <div class="texto">
+                <h2><span>notebooks,tablets, smartwatches y muchas mas hasta 6 cuotas sin interes </span></h2>
+            </div>
+            <!-- descuento-->
+            <div class="descuento">
+                <div class="hasta">
+                    hasta
+                </div>
+                <div class="descu">
+                    <div class="descuento-izq">
+                        40
+                    </div>
+                    <div class="descuento-der">
+                        <div>%</div>
+                        <div class="off">off</div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- fin descuento-->
         </div>
     </div>
 </body>
+
 </html>
