@@ -10,12 +10,14 @@
             display: flex;
             gap: 10px;
             font-family: Georgia, 'Times New Roman', Times, serif;
+            justify-content: center;
+
 
         }
 
         .productos {
             height: 300px;
-            width: 700px;
+            width: 600px;
             border: 2px solid black;
             gap: 60px;
             position: relative;
@@ -23,51 +25,53 @@
         }
 
         .imagen-izq {
-            width: 700px;
+            width: 600px;
             height: 200px;
         }
 
         .texto {
-            height: 150px;
-            width: 450px;
+            height: 250px;
+            width: 650px;
             top: 2px;
             gap: 60px;
         }
 
         .descuento {
             background-color: violet;
-            width: 100px;
+            width: 80px;
             font-family: Arial, Helvetica, sans-serif;
             position: absolute;
             top: 0%;
             left: 20px;
-            
-            .hasta{
+
+            .hasta {
                 text-align: left;
                 color: white;
-                font-size: 2 0px;
+                font-size: 20px;
             }
         }
-        .descu{
+
+        .descuento-articulos {
             display: flex;
         }
-        .descuento-izq{
-            display: flex;
+
+        .descuento-izq {
             color: white;
-            font-size: 30px;
+            font-size: 40px;
         }
-        .descuento-der{
-            display: block;
+
+        .descuento-der {
             text-align: right;
             color: white;
-            font-size: 25px;
-        
+            font-size: 30px;
+
         }
-        .off{
-            font-size: 15px;
+
+        .off {
+            font-size: 20 px;
         }
-         
-    
+
+        /*producto medio*/
     </style>
 </head>
 
@@ -76,14 +80,37 @@
         <div class="productos">
             <div><img src="elec.jpg" class="imagen-izq" alt=""></div>
             <div class="texto">
-                <h2><span>notebooks,tablets, smartwatches y muchas mas hasta 6 cuotas sin interes </span></h2>
+                <h2>notebooks,tablets, smartwatches y muchas mas en <br>hasta 6 sin interes </h2>
             </div>
             <!-- descuento-->
             <div class="descuento">
                 <div class="hasta">
                     hasta
                 </div>
-                <div class="descu">
+                <div class="descuento-articulos">
+                    <div class="descuento-izq">
+                        25
+                    </div>
+                    <div class="descuento-der">
+                        <div>%</div>
+                        <div class="off">off</div>
+                    </div>
+                </div>
+                <!-- fin descuento-->
+            </div>
+        </div>
+
+        <!--PRODUCTO 2-->
+        <div class="productos">
+            <div><img src="bicleta.webp" class="imagen-izq" alt=""></div>
+            <div class="texto">
+                <h2>aprovecha hasta 6 sin interes en articulos de <br> deportes y fitness </h2>
+            </div>
+            <div class="descuento">
+                <div class="hasta">
+                    hasta
+                </div>
+                <div class="descuento-articulos">
                     <div class="descuento-izq">
                         40
                     </div>
@@ -92,11 +119,31 @@
                         <div class="off">off</div>
                     </div>
                 </div>
-
-
+                <!--FIN PRODUCTO 2-->
             </div>
-            <!-- fin descuento-->
         </div>
+        <!--PRODUCTO 3-->
+        <div class="productos">
+            <div><img src="fravega-motos-precios.webp" class="imagen-izq" alt=""></div>
+            <div class="texto">
+                <h2>motos, hasta 6 sin interes </h2>
+            </div>
+            <div class="descuento">
+                <div class="hasta">
+                    hasta
+                </div>
+                <div class="descuento-articulos">
+                    <div class="descuento-izq">
+                        30
+                    </div>
+                    <div class="descuento-der">
+                        <div>%</div>
+                        <div class="off">off</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
 
